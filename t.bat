@@ -1,0 +1,1 @@
+trans.py >r.txt 2>e.txt
