@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 git add *
 git commit  -am "Я тут чейто изменил"
+=======
+git add *
+git commit  -am "Я тут чейто изменил"
+>>>>>>> 8b0bd27ea0e3030e572e7d54ecdb55af9c8edb03
 git push
