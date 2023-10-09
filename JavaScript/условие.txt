@@ -1,0 +1,4 @@
+		2x + 3y = 18
+4x - 5y = -8
+const [n1, n2, n3, n4, n5, n6] = [2, 3, 18, 4, -5, -8];
+node gosudarev.js

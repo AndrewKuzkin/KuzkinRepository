@@ -15,7 +15,7 @@ for i in range(n):
 	row=[]
 	for j in range(m):
 		row.append(random.randint(1, 100))
-	
+
 	matrix1.append(row)
 print(matrix1)
 
