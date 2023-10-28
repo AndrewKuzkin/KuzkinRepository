@@ -24,3 +24,4 @@ while pos1 > 0:
 		s = src[pos1+4:pos2]
 		print(s)	 
 		pos1 = pos2 +4
+input()
