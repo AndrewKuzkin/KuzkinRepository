@@ -1,0 +1,2 @@
+Перенаправил вывод в файл оut.txt по команде:
+node kuzkin.mjs >out.txt
