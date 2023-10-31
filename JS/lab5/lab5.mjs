@@ -1,7 +1,7 @@
 import { task } from './mymodule.mjs';
 
 console.log(await task(1));       // 'yes'
-console.log(await task(0));       // '25.10.2023'
+console.log(await task(0));       // Выводит текущую дату
 console.log(await task(17));      // 'yes'
 
 

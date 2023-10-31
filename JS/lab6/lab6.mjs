@@ -1,10 +1,4 @@
-const o = { name: 'Ilya', familyname: 'Goss' };
-//console.log(o.familyname);
-
-let promise = new Promise(function(resolve, reject) {
-  resolve("done");
-
-  reject(new Error("…")); // игнорируется
-  setTimeout(() => resolve("…")); // игнорируется
-});
- 
+const o = { name:Promise.resolve('Илья'),   familyname:'Государев'};
+async function task(o) {  return o.name};
+console.log(await task(o)); // Выполнится асинхронно
+console.log(o.familyname); // Выполнится синхронно
