@@ -1,0 +1,25 @@
+@startuml
+package "Web Accessibility Package" {
+  [Web Accessibility System] as WAS
+  [Screenreader] as SR
+  [Modified Accessibility Tree] as MAT
+  [Browser Extension] as BE
+  [Add-on&Script for the Screenreaders] as ASR
+    [Server-Side Application] as SSA
+  [Client-Side Application] as CSA
+  }
+ 
+package "Web Application" {
+  [DOM] as DOM
+[A11y Tree] as AT
+  [HTML/CSS/JS] as Content
+}
+
+WAS --> SR
+WAS --> AT
+WAS --> WP
+WP --> WebComponents
+AT --> WebComponents
+
+
+@enduml
