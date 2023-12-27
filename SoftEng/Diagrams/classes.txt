@@ -76,8 +76,12 @@ class mTextNode {
 }
 
 mDocument <|-- Document
-mDocument <|-- mElement
-mElement <|-- mNode
-mNode <|-- mTextNode
+mElement <|-- Element
+mNode <|-- Node
+mTextNode <|-- TextNode
+
+mDocument <-- mElement
+mElement <-- mNode
+mNode <-- mTextNode
 
 @enduml
