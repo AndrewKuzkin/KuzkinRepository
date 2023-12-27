@@ -6,9 +6,12 @@ participant "Браузер" as Br
 participant "Веб-сайт" as Site
 participant "Web-Сервер" as Server
 
-User -> "СкринRидер": клавиатурные команды
-ScreenReader-> Br: просмотр страницы
+User -> ScreenReader: клавиатурные команды
+ ScreenReader-> User: речевой отклик
+ScreenReader<- Br: просмотр страницы
 Br <- Ext: Отображение модифицированного контента
+
 Сервер --> Br: Отправка  оригинального контента
 СкринRидер -> Ext: Модификация контента
+Сервер <-- Ext: Запросы от модифицированных  страниц
 @enduml
