@@ -1,0 +1,87 @@
+@startuml
+class mDocument {
+    + id: long
+    + isModified: bool
+    + isVisibled: bool
+    - mNodeList: nodes
+    + getElementById()
+    + getElementsByTagName()
+    + createElement()
+    + createTextNode()
+    + appendChild()
+}
+
+class mElement {
+    + tagName: String: 
+    + IsModified: bool
+    + getAttribute()
+    + setAttribute()
+    + appendChild()
+}
+
+class mNode {
+    - Node: parentNode
+    - List<Node>: childNodes
+    + appendChild()
+}
+
+class mTextNode {
+    - IsVisible: bool
+    - textContent:String
+}
+
+mDocument <|-- mElement
+mElement <|-- mNode
+mNode <|-- mTextNode
+
+@enduml
+@startuml
+class mDocument {
+    + id: long
+    + isModified: bool
+    + isVisibled: bool
+    - mNodeList: nodes
+    + getElementById()
+    + getElementsByTagName()
+    + createElement()
+    + createTextNode()
+    + appendChild()
+}
+
+class mElement {
+        + IsModified: bool
+    	+ Name: String
+	+ tagName: String
+	+role : String
+	+description : String
+	+keyboardShortcut : String
+	+focusable: Bool
+	+Enabled: Bool
+	+sensitive: Bool
+	+Attributes: ListOfAttributes
+	+ getAttribute()
+	+ setAttribute()
+	+ appendChild()
+}
+
+class mNode {
+    - Node: parentNode
+    - List<Node>: childNodes
+    + appendChild()
+}
+
+class mTextNode {
+    - IsVisible: bool
+    - String: textContent
+}
+
+mDocument <|-- Document
+mElement <|-- Element
+mNode <|-- Node
+mTextNode <|-- TextNode
+
+mDocument o- mElement
+mElement o- mNode
+mNode o- mTextNode
+
+@enduml
