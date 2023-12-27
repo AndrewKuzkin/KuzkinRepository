@@ -1,0 +1,25 @@
+@startuml
+left to right direction
+skinparam packageStyle rect
+actor "Незрячий пользователь" as User
+rectangle "ScreenReader" {
+  usecase "Интерпретация клавиатурных команд, взаимодействие с другими приложениями" as UC1
+  usecase "Речевой или браилевский вывод" as UC2
+
+  User --> UC1
+  User <-- UC2
+}
+rectangle "Браузерное расширение" {
+  usecase "Модификация контента" as UC3
+  usecase "Кастомизация системы доступности" as UC4
+  UC1 --> UC3
+  UC1 --> UC4
+}
+
+rectangle "Браузер" {
+  usecase "Просмотр Web-страницы" as UC5
+
+  UC3 --> UC5
+  UC4 --> UC5
+}
+@enduml
