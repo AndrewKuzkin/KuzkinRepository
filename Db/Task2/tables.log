@@ -1,0 +1,18 @@
+ id | firstname | secondname |     email      
+----+-----------+------------+----------------
+  1 | Andrew    | Kuzkin     | kuzkin@mail.ru
+  2 | Alexander | Danilenok  | ivanov@mail.ru
+(2 строки)
+
+ chatid |      chatname       
+--------+---------------------
+      5 | Chat about dogs
+      6 | Beer Lovers Society
+      7 | Without rules
+      8 | Talk in Russian
+(4 строки)
+
+ messageid | chatid | userid | msgtext 
+-----------+--------+--------+---------
+(0 строк)
+
