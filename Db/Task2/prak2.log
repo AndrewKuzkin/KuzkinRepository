@@ -29,7 +29,11 @@ messageid | chatid | userid |              msgtext
 --------+-----------+--------------+--------+----------+---------------+------------------------------------
 
 * Результат выполнения скрипта 5.sql
-      1 | Andrew    | Kuzkin       |        |          |            11 | Hi Alexander!  Do you have a dog ?
-      2 | Alexander | Danilenok    |        |          |            12 | I do not have a dog..
-(2 строки)
-
+kuzkindb=# \i 5.sql                                                                                                     
+ userid | username  | userlastname | chatid | chatname | lastmessageid |          lastmessagetext                       
+--------+-----------+--------------+--------+----------+---------------+------------------------------------            
+      1 | Andrew    | Kuzkin       |        |          |            20 | Who is better,  mans or  dogs?                 
+      1 | Andrew    | Kuzkin       |        |          |            19 | Hi Alexander!  Do you have a dog ?             
+      2 | Alexander | Danilenok    |        |          |            21 | I do not have a dog.                           
+      2 | Alexander | Danilenok    |        |          |            22 | And the pigs were better.                      
+(4 строки)                                                                                                              
