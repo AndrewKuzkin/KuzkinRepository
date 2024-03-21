@@ -2,7 +2,7 @@
 ----+-----------+------------+----------------
   1 | Andrew    | Kuzkin     | kuzkin@mail.ru
   2 | Alexander | Danilenok  | ivanov@mail.ru
-(2 строки)
+(2 СЃС‚СЂРѕРєРё)
 
  chatid |      chatname       
 --------+---------------------
@@ -10,9 +10,9 @@
       6 | Beer Lovers Society
       7 | Without rules
       8 | Talk in Russian
-(4 строки)
+(4 СЃС‚СЂРѕРєРё)
 
  messageid | chatid | userid | msgtext 
 -----------+--------+--------+---------
-(0 строк)
+(0 СЃС‚СЂРѕРє)
 
