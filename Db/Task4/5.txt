@@ -1,0 +1,9 @@
+kuzkindb> load('5.js')                                                                                                  
+true                                                                                                                    
+kuzkindb> db.users.findOne()                                                                                            
+{                                                                                                                       
+  _id: ObjectId('65f9a9360c2800e019e84b06'),                                                                            
+  name: 'Андрей',                                                                                                       
+  email: 'kuzkin@cemi.rssi.ru',                                                                                         
+  login: 'Kuzmich'                                                                                                      
+}                                                                                                                       

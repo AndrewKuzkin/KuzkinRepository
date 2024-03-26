@@ -1,0 +1,10 @@
+kuzkindb> db.users.findOne()                                                                                            
+	{                                                                                                                       
+	  _id: ObjectId('65f9a9360c2800e019e84b06'),                                                                            
+	  name: 'Andrew',                                                                                                       
+	  key: 'val',                                                                                                           
+	  login: 'Kuzmich',                                                                                                     
+	  email: 'kuzkin@mail.ru',                                                                                              
+	  val: 'email'                                                                                                          
+	}                                                                                                                       
+kuzkindb>                                                                                                               

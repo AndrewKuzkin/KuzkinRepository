@@ -1,0 +1,22 @@
+Current Mongosh Log ID:	6602ad80a3ae5ef01b4dab2b
+Connecting to:		mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.1.5
+Using MongoDB:		7.0.6
+Using Mongosh:		2.1.5
+mongosh 2.2.1 is available for download: https://www.mongodb.com/try/download/shell
+
+For mongosh info see: [1mhttps://docs.mongodb.com/mongodb-shell/[0m
+
+------
+   The server generated these startup warnings when booting
+   2024-03-26T10:55:02.453+03:00: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+------
+
+test> switched to db kuzkindb
+kuzkindb> Uncaught MongoshInvalidInputError: [COMMON-10001] 'collection' is not a valid argument for "show".
+kuzkindb> {
+  _id: ObjectId('65f9a9360c2800e019e84b06'),
+  name: 'Andrew',
+  key: 'val',
+  login: 'Kuzmich'
+}
+kuzkindb> 
