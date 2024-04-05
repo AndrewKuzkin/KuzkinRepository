@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Слушатели событий</title>
+</head>
+<body>
+
+<h1>Демонстрация слушателей событий</h1>
+
+<button id="myButton">Нажми на меня!</button>
+<p id="output"></p>
+
+<script>
+// Находим кнопку по id
+const button = document.getElementById('myButton');
+
+// Добавляем слушатель события на клик по кнопке
+button.addEventListener('click', function() {
+    const output = document.getElementById('output');
+    output.textContent = 'Кнопка была нажата!';
+});
+</script>
+
+</body>
+</html>
+<!--
+Этот код создает кнопку на странице и добавляет к ней слушатель события click. Когда пользователь нажимает на кнопку, на странице появляется текст "Кнопка была нажата!".
+-->

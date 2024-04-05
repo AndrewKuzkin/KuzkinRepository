@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>React + state</title><meta charset="utf-8">
+  <script src="./babel7.18.5.js"></script>   
+  <script type="importmap">{ "imports": { "react": "./react17.0.2.esm.js", "react-dom": "./react-dom17.0.2.esm.js" } }</script> 
+
+ </head>
+ <body>
+    <h1>React + state + a11y ©GossJS</h1>
+    <div></div>
+    <script type="text/babel" data-type="module" >
+     import React, { useState } from 'react';
+     import { render as r } from 'react-dom';
+     import { style } from './styles.js';
+
+     function Counter({ title, votes }) {
+       const [count, setCount] = useState(votes);
+       const countUp = () => setCount(count => ++count);
+       return <b tabIndex="0" role="button" aria-label="увеличить этот счётчик" aria-description={count} 
+                 style={style} onKeyPress = {e => e.key == 'Enter' ? countUp() : null}
+                 onClick={countUp}>
+                 {title} {count}
+              </b>; //                   -----------------	
+     }
+     
+     r(<><Counter title="⬆️" votes="5"  /><Counter title="⬆️" votes="7"  /></>, document.querySelector('div'));
+    </script>     
+ </body>
+</html>
+
+<!-- https://kodaktor.ru/react_simple_counter.esm -->

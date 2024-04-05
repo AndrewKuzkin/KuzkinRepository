@@ -1,0 +1,6 @@
+Генерация ключа:
+ssh-keygen
+С длиной 2048 бит:
+ssh-keygen -b 2048 -t rsa -m pem
+извлечение публичного ключа из приватного:
+openssl rsa -in id_rsa -pubout -out pub2

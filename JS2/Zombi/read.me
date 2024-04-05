@@ -1,0 +1,24 @@
+Настоящие решения для автоматизации тестирования страниц и в    том числе автоматизации вызова событий: Puppeteer или Playwright 
+
+А мы рассмотрим Zombie
+
+1. Создайте папку для проекта
+2. npm init -y
+3. в файле package.json добавляем запись "type": "module"
+Тогда можно использовать расширение .js, иначе - .mjs
+4. добавим зависимость Zombie
+npm i zombie
+5. напишем сценарий для автоматического запуска событий
+программа должна «зайти» на страницу, ввести какое-то имя в поле ввода, нажать на кнопку и прочитать полученный результат из заголовка окна (title из раздела head)
+
+import Zombie from 'zombie';
+const page  = new  Zombie();
+let myURL = 'https://kodaktor.ru/g/16032024';
+await page.visit(myURL);
+page.fill('#iii', 'Ilya');
+await page.pressButton('button');
+console.log(page.document.title);
+
+запустите ваш сценарий командой node
+например node index.js
+и убедитесь что в консоли появится строка с приветствием

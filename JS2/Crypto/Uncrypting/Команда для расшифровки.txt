@@ -1,0 +1,2 @@
+Расшифровка:
+openssl rsautl -decrypt -in secret -out unsecret.txt -inkey id_rsa -oaep

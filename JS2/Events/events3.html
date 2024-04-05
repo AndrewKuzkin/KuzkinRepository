@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Слушатели событий с делегированием</title>
+</head>
+<body>
+
+<h1>Демонстрация слушателей событий с делегированием</h1>
+
+<div id="container">
+    <button id="myButton">Нажми на меня!</button>
+    <button>Или на меня!</button>
+    <button>Или на меня!</button>
+</div>
+
+<p id="output"></p>
+
+<script>
+// Находим контейнер, в котором будем делегировать события
+const container = document.getElementById('container');
+const output = document.getElementById('output');
+let count = 0;
+
+// Добавляем слушатель события на клик в контейнере
+container.addEventListener('click', function(event) {
+    if (event.target.tagName === 'BUTTON') {
+        count++; // Увеличиваем счетчик нажатий
+			output.textContent = 'Кнопка была нажата'+count+'раз(а)';
+    }
+});
+</script>
+
+</body>
+</html>
+<!--
+Теперь при клике на любую кнопку внутри контейнера будет увеличиваться счетчик нажатий и выводиться сообщение о количестве нажатий. Делегирование событий позволяет  обрабатывать события на нескольких элементах, не устанавливая отдельных слушателей для каждого из них.
+-->

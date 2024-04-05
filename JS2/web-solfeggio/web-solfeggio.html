@@ -1,0 +1,64 @@
+<html>
+<head>
+    <title>WEB-сольфеджио</title>
+</head>
+<body>
+<h3>Проиграть  все ноты первой октавы</h3>
+<button onclick="playOctava()">Play</button><hr>
+
+<h3>Проиграть  аккорд</h3>
+<button onclick="playChord()">Play</button><hr>
+
+<h3>Проиграть  мелодию</h3>
+<button onclick="playMelody()">Play</button><hr>
+
+<script>
+const octava = {
+	'C4': 261.63,
+	'C#4': 277.18,
+	'D4': 293.66,
+	'D#4': 311.13,
+	'E4': 329.63,
+	'F4': 349.23,
+	'F#4': 369.99,
+	'G4': 392.00,
+	'G#4': 415.30,
+	'A4': 440.00,
+	'A#4': 466.16,
+	'B4': 493.88,
+	'P': 0 // Пауза
+};
+
+        async function playSound(freq, dur) {
+            const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+            const oscillator = audioContext.createOscillator();
+            oscillator.type = 'sine';
+            oscillator.frequency.value = freq;
+            oscillator.connect(audioContext.destination);
+            oscillator.start();
+            await new Promise(resolve => setTimeout(resolve, dur));
+            oscillator.stop();
+        };
+
+        async function playOctava() {
+			for (const note in octava) {
+				await playSound(octava[note], 250);
+			}
+		};
+
+          function playChord() {
+			const chord = ['C4',  'E4', 'G4', 2000];
+			for (let i = 0; i < chord.length; i++) {
+				playSound(octava[chord[i]], chord[chord.length-1]);
+			};
+		};
+
+		 async function playMelody() {
+		 const melody = ['E4', 1000, 'C4', 750, 'D4', 250, 'E4', 1000, 'A4', 750, 'G#4', 250, 'E4', 3000];
+			for (let i = 0; i < melody.length; i += 2) {
+				await playSound(octava[melody[i]], melody[i+1]);
+			};
+		};
+</script>
+</body>
+</html>

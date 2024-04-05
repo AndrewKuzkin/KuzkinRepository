@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Слушатели событий</title>
+</head>
+<body>
+
+<h1>Демонстрация слушателей событий</h1>
+
+<button id="myButton">Нажми на меня!</button>
+<p id="output"></p>
+
+<script>
+// Находим кнопку по id
+const button = document.getElementById('myButton');
+
+let count = 0; // Переменная для хранения количества нажатий
+
+// Добавляем слушатель события на клик по кнопке
+button.addEventListener('click', function() {
+    const output = document.getElementById('output');
+    count++; // Увеличиваем счетчик нажатий
+    output.textContent = 'Кнопка была нажата'+count+'раз(а)';
+});
+</script>
+
+</body>
+</html>

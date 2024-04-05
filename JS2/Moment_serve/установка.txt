@@ -1,0 +1,7 @@
+npm init -y
+Добавляем в package.json:
+"type":"module",
+npm install moment
+npm install serve --save-dev
+или просто:
+npx serve

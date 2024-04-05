@@ -1,0 +1,17 @@
+<html>
+<body>
+<script>
+function myWrite(tagName, str) {
+var tag = document.createElement('tagName');
+var text = document.createTextNode(str);
+tag.appendChild(text);
+document.body.appendChild(tag);
+};
+myWrite('h1', 'Hello!');
+document.write('<br>');
+myWrite('h2', 'world!');
+document.write('<br>');
+document.write('My name is Andrew.');
+</script>
+</body>
+</html>

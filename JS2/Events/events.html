@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event Listener and Event Dispatcher Example</title>
+</head>
+<body>
+
+<button id="myButton">Click me!</button>
+
+<script>
+// Создаем слушатель событий
+document.getElementById('myButton').addEventListener('click', function() {
+  console.log('Button clicked!');
+  
+  // Создаем и диспетчерим новое пользовательское событие
+  var customEvent = new CustomEvent('customEvent', { detail: 'Hello from custom event!' });
+  document.dispatchEvent(customEvent);
+});
+
+// Создаем слушатель для пользовательского события, диспетчеризованного выше
+document.addEventListener('customEvent', function(event) {
+  console.log('Custom event received:', event.detail);
+});
+</script>
+
+</body>
+</html>
+
+<!--
+В этом примере, когда вы нажимаете на кнопку "Click me!", выводится сообщение "Button clicked!" в консоль, а затем создается пользовательское событие с деталями "Hello from custom event!". После этого, слушатель пользовательского события перехватывает это событие и выводит сообщение "Custom event received: Hello from custom event!" в консоль.
+-->

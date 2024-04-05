@@ -1,0 +1,5 @@
+curl -o babel7.18.5.js http://kodaktor.ru/babel7.18.5.js
+curl -o react17.0.2.esm.js http://kodaktor.ru/react17.0.2.esm.js
+curl -o react-dom17.0.2.esm.js http://kodaktor.ru/react-dom17.0.2.esm.js
+curl -o styles.js https://kodaktor.ru/react_intro/styles.js
+curl -o index.html https://kodaktor.ru/react_intro/index.html

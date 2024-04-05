@@ -1,0 +1,20 @@
+<html>
+ <head>
+  <title>Страница HTML5</title><meta charset="utf-8">
+ </head>
+  <body>
+    <article></article>
+    <script>
+// эта функция создает не 1000, а 10 элементов div и присваивает им некий текст для наглядности
+function createDiv() {
+    for (let i=0; i< 10; i++) {
+        let newDiv = document.createElement('div');
+		newDiv.id = i;
+		newDiv.textContent = 'Элемент div' + i;
+		   document.querySelector('article').appendChild(newDiv);
+    };
+}
+</script>
+<b onclick='createDiv()'>Выполнить</b>
+  </body>
+</html>

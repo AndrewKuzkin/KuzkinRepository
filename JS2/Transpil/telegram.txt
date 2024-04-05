@@ -1,0 +1,11 @@
+1. Создаём папку для проекта и инициализируем его
+npm init -yconst newcode = '8 |> f |> Math.sqrt |> console.log';2018: Asynchronous Iteration
+6. Выполним этот преобразованный код
+eval(code)
+
+5. Запустим транспиляцию с подключением плагина
+const { code } = Babel.transform(newcode, { plugins: [['proposal-pipeline-operator', { proposal: 'minimal' }]] });
+
+
+4. Разместим в временной переменной код, который надо транспилировать
+const newcode = '8 |> f |> Math.sqrt |> console.log';2018: Asynchronous Iteration

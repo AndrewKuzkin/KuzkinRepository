@@ -1,0 +1,15 @@
+рассмотрим webpack
+npm i webpack webpack-cli
+1. создаём новую папку и переходим в неё в терминале
+npm i moment
+4. устанавливаем девелоперские зависимости, которые не используются для выполнения нашего проекта
+npm i -D webpack webpack-cli serve
+5. создаём первую версию веб-страницы в которой используется moment
+<h1 id="hh"></h1>
+6. создадим отдельный файл index.js в котором импортируем библиотеку moment
+const moment = require('moment');
+этот файл index.js переместите в отдельную специально созданную папку src
+7. допишем в файл index.html ссылку на этот сценарий
+<script src="./src/index.js"></script>
+npx webpack
+9. npx serve .
