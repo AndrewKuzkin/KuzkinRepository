@@ -1,0 +1,19 @@
+{
+	"name": "Botty",
+	"version": "1.0.1",
+	"description": "Тестовй бот",
+	"main": "botty.js",
+	"scripts": {
+		"test": "jest"
+	},
+	"keywords": [],
+	"author": "Кузькин",
+	"license": "ISC",
+	"dependencies": {
+		"fs": "^0.0.1-security",
+		"telegraf": "^4.16.3"
+	},
+	"devDependencies": {
+		"jest": "^29.7.0"
+	}
+}
