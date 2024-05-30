@@ -1,0 +1,86 @@
+PASS Test/hYes.test.js
+PASS Test/hNo.test.js
+FAIL Test/hAuth.test.js
+  ● Test1: Просит об авторизации, если пользователь не авторизован
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "notRegistred"
+    Received: "Registred"
+
+    [0m [90m 27 |[39m     hAuth(ctx[33m,[39m nextMock)[33m;[39m
+     [90m 28 |[39m
+    [31m[1m>[22m[39m[90m 29 |[39m 		expect(ctx[33m.[39msession[33m.[39mstate)[33m.[39mtoBe([32m'notRegistred'[39m)[33m;[39m
+     [90m    |[39m 		                          [31m[1m^[22m[39m
+     [90m 30 |[39m     expect(replyMock)[33m.[39mtoHaveBeenCalledWith(ctx[33m.[39m[36mfrom[39m[33m.[39mfirst_name [33m+[39m [32m', Вы не зарегистрированы! Хотите зарегистрироваться?'[39m)[33m;[39m
+     [90m 31 |[39m     expect(nextMock)[33m.[39mtoHaveBeenCalled()[33m;[39m
+     [90m 32 |[39m })[33m;[39m[0m
+
+      at Object.toBe (Test/hAuth.test.js:29:29)
+
+FAIL Test/hStart.test.js
+  ● Test suite failed to run
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    SyntaxError: C:\ITMO\Testing\BottyM\Test\hStart.test.js: Missing semicolon. (49:3)
+
+    [0m [90m 47 |[39m
+     [90m 48 |[39m
+    [31m[1m>[22m[39m[90m 49 |[39m [33mЭти[39m тесты позволят вам убедиться[33m,[39m что функция hStart ведет себя правильно в различных сценариях[33m.[39m [33mНе[39m забудьте подставить реальные данные для ctx[33m.[39m[36mfrom[39m[33m.[39mfirst_name и ctx[33m.[39mbotInfo[33m.[39musername в вашем тесте[33m.[39m [33mЕсли[39m у вас возникнут дополнительные вопросы или нужна помощь[33m,[39m пожалуйста[33m,[39m дайте знать[33m.[39m
+     [90m    |[39m    [31m[1m^[22m[39m[0m
+
+      at constructor (node_modules/@babel/parser/src/parse-error.ts:74:19)
+      at Parser.toParseError [as raise] (node_modules/@babel/parser/src/tokenizer/index.ts:1487:19)
+      at Parser.raise [as semicolon] (node_modules/@babel/parser/src/parser/util.ts:141:10)
+      at Parser.semicolon [as parseExpressionStatement] (node_modules/@babel/parser/src/parser/statement.ts:1305:10)
+      at Parser.parseExpressionStatement [as parseStatementContent] (node_modules/@babel/parser/src/parser/statement.ts:651:19)
+      at Parser.parseStatementContent [as parseStatementLike] (node_modules/@babel/parser/src/parser/statement.ts:417:17)
+      at Parser.parseStatementLike [as parseModuleItem] (node_modules/@babel/parser/src/parser/statement.ts:354:17)
+      at Parser.parseModuleItem [as parseBlockOrModuleBlockBody] (node_modules/@babel/parser/src/parser/statement.ts:1385:16)
+      at Parser.parseBlockOrModuleBlockBody [as parseBlockBody] (node_modules/@babel/parser/src/parser/statement.ts:1359:10)
+      at Parser.parseBlockBody [as parseProgram] (node_modules/@babel/parser/src/parser/statement.ts:213:10)
+      at Parser.parseProgram [as parseTopLevel] (node_modules/@babel/parser/src/parser/statement.ts:195:25)
+      at Parser.parseTopLevel [as parse] (node_modules/@babel/parser/src/parser/index.ts:45:10)
+      at parse (node_modules/@babel/parser/src/index.ts:66:38)
+      at parser (node_modules/@babel/core/src/parser/index.ts:28:19)
+          at parser.next (<anonymous>)
+      at normalizeFile (node_modules/@babel/core/src/transformation/normalize-file.ts:50:24)
+          at normalizeFile.next (<anonymous>)
+      at run (node_modules/@babel/core/src/transformation/index.ts:39:36)
+          at run.next (<anonymous>)
+      at transform (node_modules/@babel/core/src/transform.ts:29:20)
+          at transform.next (<anonymous>)
+      at evaluateSync (node_modules/gensync/index.js:251:28)
+      at sync (node_modules/gensync/index.js:89:14)
+      at fn (node_modules/@babel/core/src/errors/rewrite-stack-trace.ts:99:14)
+      at transformSync (node_modules/@babel/core/src/transform.ts:66:52)
+      at ScriptTransformer.transformSource (node_modules/@jest/transform/build/ScriptTransformer.js:545:31)
+      at ScriptTransformer._transformAndBuildScript (node_modules/@jest/transform/build/ScriptTransformer.js:674:40)
+      at ScriptTransformer.transform (node_modules/@jest/transform/build/ScriptTransformer.js:726:19)
+
+Test Suites: 2 failed, 2 passed, 4 total
+Tests:       1 failed, 3 passed, 4 total
+Snapshots:   0 total
+Time:        2.029 s
+Ran all test suites.
