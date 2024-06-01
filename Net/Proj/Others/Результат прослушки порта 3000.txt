@@ -1,0 +1,6 @@
+mitmproxy -p 8081 -s proxy.py
+ HTTP  28.05.2024 09:10:36 127.0.0.1 GET /                                                                              
+ HTTP  28.05.2024 09:10:36 127.0.0.1 Returned 200 in 36 ms                                                              
+ HTTP  28.05.2024 09:10:37 127.0.0.1 GET /favicon.ico                                                                   
+ HTTP  28.05.2024 09:10:37 127.0.0.1 Returned 404 in 10 ms                                                              
+пусто

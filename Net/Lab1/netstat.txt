@@ -1,0 +1,74 @@
+
+Активные подключения
+
+  Имя    Локальный адрес        Внешний адрес          Состояние      Состояние разгрузки
+
+  TCP    0.0.0.0:80             DESKTOP-DROM5JL:0      LISTENING       InHost      
+  TCP    0.0.0.0:135            DESKTOP-DROM5JL:0      LISTENING       InHost      
+  TCP    0.0.0.0:445            DESKTOP-DROM5JL:0      LISTENING       InHost      
+  TCP    0.0.0.0:1038           DESKTOP-DROM5JL:0      LISTENING       InHost      
+  TCP    0.0.0.0:5040           DESKTOP-DROM5JL:0      LISTENING       InHost      
+  TCP    0.0.0.0:5432           DESKTOP-DROM5JL:0      LISTENING       InHost      
+  TCP    0.0.0.0:7070           DESKTOP-DROM5JL:0      LISTENING       InHost      
+  TCP    0.0.0.0:7680           DESKTOP-DROM5JL:0      LISTENING       InHost      
+  TCP    0.0.0.0:8088           DESKTOP-DROM5JL:0      LISTENING       InHost      
+  TCP    0.0.0.0:49664          DESKTOP-DROM5JL:0      LISTENING       InHost      
+  TCP    0.0.0.0:49665          DESKTOP-DROM5JL:0      LISTENING       InHost      
+  TCP    0.0.0.0:49666          DESKTOP-DROM5JL:0      LISTENING       InHost      
+  TCP    0.0.0.0:49667          DESKTOP-DROM5JL:0      LISTENING       InHost      
+  TCP    0.0.0.0:49669          DESKTOP-DROM5JL:0      LISTENING       InHost      
+  TCP    127.0.0.1:5939         DESKTOP-DROM5JL:0      LISTENING       InHost      
+  TCP    127.0.0.1:13348        DESKTOP-DROM5JL:13349  ESTABLISHED     InHost      
+  TCP    127.0.0.1:13349        DESKTOP-DROM5JL:13348  ESTABLISHED     InHost      
+  TCP    127.0.0.1:27017        DESKTOP-DROM5JL:0      LISTENING       InHost      
+  TCP    192.168.1.75:139       DESKTOP-DROM5JL:0      LISTENING       InHost      
+  TCP    192.168.1.75:6637      192.168.1.29:ms-do     SYN_SENT        InHost      
+  TCP    192.168.1.75:7973      149.154.167.41:https   ESTABLISHED     InHost      
+  TCP    192.168.1.75:12615     relay-3d17eb18:http    ESTABLISHED     InHost      
+  TCP    192.168.1.75:13344     170.114.52.5:https     CLOSE_WAIT      InHost      
+  TCP    192.168.1.75:13350     20.54.36.229:https     ESTABLISHED     InHost      
+  TCP    192.168.1.75:13353     159-124-8-132:https    ESTABLISHED     InHost      
+  TCP    192.168.1.75:13354     159-124-8-132:https    ESTABLISHED     InHost      
+  TCP    [::]:80                DESKTOP-DROM5JL:0      LISTENING       InHost      
+  TCP    [::]:135               DESKTOP-DROM5JL:0      LISTENING       InHost      
+  TCP    [::]:445               DESKTOP-DROM5JL:0      LISTENING       InHost      
+  TCP    [::]:1038              DESKTOP-DROM5JL:0      LISTENING       InHost      
+  TCP    [::]:5432              DESKTOP-DROM5JL:0      LISTENING       InHost      
+  TCP    [::]:7680              DESKTOP-DROM5JL:0      LISTENING       InHost      
+  TCP    [::]:8088              DESKTOP-DROM5JL:0      LISTENING       InHost      
+  TCP    [::]:49664             DESKTOP-DROM5JL:0      LISTENING       InHost      
+  TCP    [::]:49665             DESKTOP-DROM5JL:0      LISTENING       InHost      
+  TCP    [::]:49666             DESKTOP-DROM5JL:0      LISTENING       InHost      
+  TCP    [::]:49667             DESKTOP-DROM5JL:0      LISTENING       InHost      
+  TCP    [::]:49669             DESKTOP-DROM5JL:0      LISTENING       InHost      
+  UDP    0.0.0.0:123            *:*                                                
+  UDP    0.0.0.0:500            *:*                                                
+  UDP    0.0.0.0:4500           *:*                                                
+  UDP    0.0.0.0:5050           *:*                                                
+  UDP    0.0.0.0:5353           *:*                                                
+  UDP    0.0.0.0:5355           *:*                                                
+  UDP    0.0.0.0:50001          *:*                                                
+  UDP    0.0.0.0:54392          *:*                                                
+  UDP    0.0.0.0:63419          *:*                                                
+  UDP    0.0.0.0:63421          *:*                                                
+  UDP    0.0.0.0:63424          *:*                                                
+  UDP    127.0.0.1:1900         *:*                                                
+  UDP    127.0.0.1:51386        *:*                                                
+  UDP    127.0.0.1:51575        *:*                                                
+  UDP    192.168.1.75:137       *:*                                                
+  UDP    192.168.1.75:138       *:*                                                
+  UDP    192.168.1.75:1900      *:*                                                
+  UDP    192.168.1.75:5353      *:*                                                
+  UDP    192.168.1.75:50093     *:*                                                
+  UDP    192.168.1.75:51574     *:*                                                
+  UDP    [::]:123               *:*                                                
+  UDP    [::]:500               *:*                                                
+  UDP    [::]:4500              *:*                                                
+  UDP    [::]:5353              *:*                                                
+  UDP    [::]:5355              *:*                                                
+  UDP    [::]:54393             *:*                                                
+  UDP    [::1]:1900             *:*                                                
+  UDP    [::1]:5353             *:*                                                
+  UDP    [::1]:51573            *:*                                                
+  UDP    [fe80::df:4fae:18:9833%15]:1900  *:*                                                
+  UDP    [fe80::df:4fae:18:9833%15]:51572  *:*                                                
