@@ -1,6 +1,0 @@
-https://habr.com/ru/companies/selectel/articles/242727/
-https://docs.mitmproxy.org/stable/
-https://timeweb.cloud/blog/analiz-http-trafika-s-mitmproxy
-mitmпрокси
-
-mitmproxy -p 3000 -s proxy.py
