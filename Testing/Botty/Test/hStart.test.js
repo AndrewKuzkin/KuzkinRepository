@@ -9,7 +9,7 @@
 
 const { hStart } = require('../botty.js');
 
-describe('hStart function', () => {
+describe('функция hStart', () => {
     let ctx;
 
     beforeEach(() => {

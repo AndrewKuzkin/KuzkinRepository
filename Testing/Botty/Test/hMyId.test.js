@@ -1,7 +1,7 @@
 const { hMyId } = require('../botty.js'); // Импортируем функцию hMyId из модуля
 
 describe('hMyId', function() {
-    it('should reply with user ID', function() {
+    it('следует указать в ответе идентификатор пользователя', function() {
         // Создаем mock объект ctx с нужными свойствами
         const ctx = {
             from: {
@@ -14,7 +14,7 @@ describe('hMyId', function() {
         hMyId(ctx);
 
         // Ожидаемая строка с сообщением, содержащим ID пользователя
-        const expectedReply = 'Ваш ID: 123'; // Замените 123 на ожидаемый ID пользователя
+        const expectedReply = 'Ваш ID: 123'; 
 
         // Проверяем, что функция reply была вызвана с правильным сообщением
         expect(ctx.reply).toHaveBeenCalledWith(expectedReply);

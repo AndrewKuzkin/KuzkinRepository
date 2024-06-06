@@ -1,7 +1,7 @@
 const { hText } = require('../botty.js'); // Импортируем функцию hText из модуля
 
 describe('hText', function() {
-    it('should handle authorization process correctly', function() {
+    it('должен правильно обрабатывать процесс авторизации', function() {
         // Создаем mock объект ctx с нужными свойствами и значениями
         const ctx = {
             session: {

@@ -1,7 +1,7 @@
 const { Telegraf } = require('telegraf');
 const { hDeAuth } = require('../botty.js');
 describe('hDeAuth', function() {
-    it('should deauthorize the user when /da command is received', function() {
+    it('следует ли деавторизовать пользователя при получении команды /da', function() {
         // Создаем mock объект ctx
         const ctx = {
             session: {

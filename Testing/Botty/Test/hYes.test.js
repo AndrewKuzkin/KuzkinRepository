@@ -1,4 +1,4 @@
-//2 случая: про когда ctx.session.state равен 'WaitRegistration' и когда он равен 'WaitAuthorization'. 
+//2 случая:  когда ctx.session.state равен 'WaitRegistration' и когда он равен 'WaitAuthorization'. 
 
 const { hYes } = require('../botty.js');
 const fs = require('fs');

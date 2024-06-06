@@ -2,7 +2,7 @@ const { hHelp } = require('../botty.js'); // Импортируем функци
 
 
 describe('hHelp', function() {
-    it('should reply with help message', function() {
+    it('следует ответить сообщением о помощи', function() {
         // Создаем mock объект ctx с нужными свойствами
         const ctx = {
             reply: jest.fn() // Mock функции reply

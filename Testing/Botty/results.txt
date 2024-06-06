@@ -1,7 +1,8 @@
-PASS Test/hText.test.js
 PASS Test/hHelp.test.js
+PASS Test/hMyId.test.js
+PASS Test/hText.test.js
 FAIL Test/hStart.test.js
-  ● hStart function › Test: Пользователь зарегистрирован и авторизован
+  ● функция hStart › Test: Пользователь зарегистрирован и авторизован
 
     expect(jest.fn()).toHaveBeenCalledWith(...expected)
 
@@ -20,18 +21,17 @@ FAIL Test/hStart.test.js
 
       at Object.toHaveBeenCalledWith (Test/hStart.test.js:44:27)
 
-PASS Test/hReg.test.js
-PASS Test/hYes.test.js
-PASS Test/hMyId.test.js
 PASS Test/hMoment.test.js
-PASS Test/hAuth.test.js
-PASS Test/hRegInfo.test.js
-PASS Test/botLaunch.test.js
 PASS Test/hDeAuth.test.js
+PASS Test/hRegInfo.test.js
 PASS Test/hNo.test.js
+PASS Test/hYes.test.js
+PASS Test/hReg.test.js
+PASS Test/hAuth.test.js
+PASS Test/botLaunch.test.js
 
 Test Suites: 1 failed, 11 passed, 12 total
 Tests:       1 failed, 15 passed, 16 total
 Snapshots:   0 total
-Time:        2.065 s
+Time:        2.506 s
 Ran all test suites.
