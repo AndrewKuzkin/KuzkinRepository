@@ -1,6 +1,6 @@
 const { Telegraf, session } = require('telegraf');
 const fs = require('fs');
-   const moment = require('moment');
+	const moment = require('moment');
 
 // Чтение токена из файла
 const botToken = fs.readFileSync('bot.token', 'utf8').trim();
@@ -114,15 +114,15 @@ function hMoment(ctx) {
 bot.command('moment', hMoment);
 
 // Обработчик для команды /ui
-function hUserInfo(ctx) {
-    const id = ctx.from.id;
-    const fn = ctx.from.first_name;
-    const un = ctx.from.username;
-    ctx.reply('Информация о пользователе :' + '\nтелеграм-пользователь:' +un + ' с именем ' + fn + ' и userid: ' + id );
-};
+		function hUserInfo(ctx) {
+			const id = ctx.from.id;
+			const fn = ctx.from.first_name;
+			const un = ctx.from.username;
+			ctx.reply('Информация о пользователе :' + '\nтелеграм-пользователь:' +un + ' с именем ' + fn + ' и userid: ' + id );
+		};
 
-bot.command('ui', hUserInfo);
- 
+		bot.command('ui', hUserInfo);
+		 
 // Обработчик для команды /bi
 function hBotInfo(ctx) {
     bot.telegram.getMe().then((botInfo) => {
@@ -136,7 +136,7 @@ function hBotInfo(ctx) {
 bot.command('bi', hBotInfo);
  
 
-bot.command(/(pin|p)/i, (ctx) => {
+bot.command(/(pin)/i, (ctx) => {
     const pinCode = ctx.message.text.trim().slice(-4);
         if (pinCode.length !== 4 || isNaN(pinCode)) {
             ctx.reply('Пин-код должен состоять из 4 цифр. Попробуйте еще раз.');
@@ -153,17 +153,29 @@ bot.command(/(pin|p)/i, (ctx) => {
         }
     });
 
-// Обработчик для команды /myid /id
-bot.command(/(id|myid)/i, (ctx) => {
+// Обработчик для команды /id
+function hMyId(ctx) {
     const userId  = ctx.from.id; // или ctx.message.from.id;
     ctx.reply('Ваш ID: ' + userId);
-});
+};
+
+bot.command(/(id)/i, hMyId);
 
 // Обработчик для команды /help/h
-bot.    command(/(h|help)/i, (ctx) => {
-    const helpStr= 'Справка';
+function hHelp(ctx) {
+const helpStr = '-Начало работы. Регистрация и авторизация(если нужно)\n/start\n'+
+'-На вопросы типа Yes/No можно отвечать полным словом или кратко(yes, no, y, n). Ввод не чувствителен к регистру\n'+
+'- Информация о регистрации и авторизации\n/i\n'+
+'- Показать идентификатор пользователя, с которым он зарегистрирован в телеграм\n/id\n'+
+'-Полная информация о пользователе\n/ui\n'+
+'- Информация о боте\n/bi\n'+
+'- Деавторизация\n/da\n'+
+'- Красиво выводит текущий момент при помощи библиотеки moment.js\n/moment\n'+
+'- Эта справка\n/help или /h';
     ctx.reply(helpStr);
-});
+};
+
+bot.    command(/(h|help)/i, hHelp);
 
 bot.on('text', hText);
 async function hText(ctx)  {
@@ -190,10 +202,15 @@ async function hText(ctx)  {
 };  
 
 //bot.launch();
+// Проверяем на режим тестирования и запускаем бота
+if (process.env.NODE_ENV !== 'test') {
+    bot.launch();
+};
 
 //module.exports = bot;
 
 module.exports = {
+	bot: bot,
     hAuth: hAuth,
     hStart: hStart,
 	hYes: hYes,
@@ -203,5 +220,7 @@ module.exports = {
 	hMoment: hMoment,
 	hUserInfo: hUserInfo,
 	hBotInfo: hBotInfo,
+	hMyId: hMyId,
+	hHelp: hHelp,
 	hText: hText
 };

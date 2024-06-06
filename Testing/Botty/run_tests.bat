@@ -1,0 +1,1 @@
+npm test >1 2>results.txt

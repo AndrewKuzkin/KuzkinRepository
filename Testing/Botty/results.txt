@@ -1,0 +1,37 @@
+PASS Test/hText.test.js
+PASS Test/hHelp.test.js
+FAIL Test/hStart.test.js
+  ● hStart function › Test: Пользователь зарегистрирован и авторизован
+
+    expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+    Expected: "Привет, Имя пользователя! Я Название бота. Введи команду:"
+    Received: "Привет , Имя пользователя! Я Название бота Введи команду:"
+
+    Number of calls: 1
+
+    [0m [90m 42 |[39m         hStart(ctx)[33m;[39m
+     [90m 43 |[39m
+    [31m[1m>[22m[39m[90m 44 |[39m         expect(ctx[33m.[39mreply)[33m.[39mtoHaveBeenCalledWith([32m'Привет, Имя пользователя! Я Название бота. Введи команду:'[39m)[33m;[39m
+     [90m    |[39m                           [31m[1m^[22m[39m
+     [90m 45 |[39m     })[33m;[39m
+     [90m 46 |[39m })[33m;[39m
+     [90m 47 |[39m[0m
+
+      at Object.toHaveBeenCalledWith (Test/hStart.test.js:44:27)
+
+PASS Test/hReg.test.js
+PASS Test/hYes.test.js
+PASS Test/hMyId.test.js
+PASS Test/hMoment.test.js
+PASS Test/hAuth.test.js
+PASS Test/hRegInfo.test.js
+PASS Test/botLaunch.test.js
+PASS Test/hDeAuth.test.js
+PASS Test/hNo.test.js
+
+Test Suites: 1 failed, 11 passed, 12 total
+Tests:       1 failed, 15 passed, 16 total
+Snapshots:   0 total
+Time:        2.065 s
+Ran all test suites.

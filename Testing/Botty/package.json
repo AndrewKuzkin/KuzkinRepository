@@ -1,6 +1,6 @@
 {
 	"name": "Botty",
-	"version": "1.0.1",
+	"version": "21",
 	"description": "Тестовй бот",
 	"main": "botty.js",
 	"scripts": {
