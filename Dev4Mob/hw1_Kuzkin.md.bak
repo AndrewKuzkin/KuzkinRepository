@@ -1,0 +1,33 @@
+#Задание 1
+
+let firstString = "I can"
+let secondString = "code"
+print("\(firstString) \(secondString)!")
+
+
+#Задание 2
+
+let myAge = 55
+let myAgeInTenYears = myAge + 10
+let daysInYear = 365.25
+let daysPassed: Float = Float(myAgeInTenYears) * Float(daysInYear)
+
+print("Мой возраст \(myAge) лет. Через 10 лет, мне будет \(myAgeInTenYears) лет, с момента моего рождения пройдет \(daysPassed) дней.")
+
+
+#Задание 3
+
+import Foundation
+
+let cathetusAC = 8.0
+let cathetusCB = 6.0
+
+// Вычисление гипотенузы AB
+let hypotenuseAB = sqrt(cathetusAC * cathetusAC + cathetusCB * cathetusCB)
+
+// Вычисление площади и периметра прямоугольного треугольника
+let area = (cathetusAC * cathetusCB) / 2
+let perimeter = cathetusAC + cathetusCB + hypotenuseAB
+
+print("Площадь прямоугольного треугольника: \(area)")
+print("Периметр прямоугольного треугольника: \(perimeter)")
