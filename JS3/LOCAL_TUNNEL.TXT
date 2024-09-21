@@ -1,0 +1,9 @@
+npm install -g localtunnel
+lt -p 1234
+---
+
+Будет выдан временный адрес и пароль.
+Например:
+https://cold-wolves-watch.loca.lt/
+Пароль:
+217.66.154.247
